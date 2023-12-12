@@ -6,13 +6,14 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Main(args, Console.WriteLine("Nazywam się Artur Mochnia"));
+        Console.WriteLine("Nazywam się Artur Mochnia");
+        GreetUser("Artur");
     }
 
-    public static void Main(string[] args, void v)
+    private static void GreetUser(string firstAndLastName)
     {
-        string firstAndLastName = "Artur";
         Console.WriteLine("Hello, World!");
+        Console.WriteLine($"Hello {firstAndLastName}");
     }
 
     private string GetDebuggerDisplay()
